@@ -1,0 +1,69 @@
+html {
+    background-color: rgb(116, 12, 12);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+}
+
+#title {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 36pt;
+}
+
+#description {
+    text-align: center;
+}
+
+#form-holder {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    background-color: rgb(43, 39, 39);
+    width: 60%;
+    border-radius: 15px;
+}
+
+form {
+    padding: 40px;
+}
+
+label {
+    margin-top: 35px;
+    display: block;
+    align-items: left;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#dropdown {
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#text-area {
+    width: 97%;
+    resize: vertical;
+    min-height: 100px;
+    padding: 10px;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(51, 134, 211);
+    height: 50px;
+}

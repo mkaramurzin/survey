@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1 id="title">cs50w Survey Form</h1>
+            <p id="description">Thank you for helping us improve our course</p>
+        </header>
+
+        <div id="form-holder">
+            <form id="survey-form">
+                <label class="label" id="name-label" for="name">Name:</label>
+                <input type="text" name="name" placeholder="Enter your name"
+                required class="form-input" id="name">
+
+                <label class="label" id="email-label">Email:</label>
+                <input type="email" name="email" id="email"
+                class="form-input" placeholder="Enter your email" required>
+
+                <label class="label" id="number-label">Age (optional)</label>
+                <input type="number" id="number" placeholder="Age"
+                class="form-input" min="10" max="99">
+
+                <label>What description fits you best?</label>
+                <select id="dropdown" required>
+                    <option disable selected value>Select description</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="employee">Employee</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Would you recommend this course to a friend?</label>
+                <label><input type="radio" name="recommend" value="definitely">Definitely</label>
+                <label><input type="radio" name="recommend" value="maybe">Maybe</label>
+                <label><input type="radio" name="recommend" value="no">No</label>
+
+                <label>What would you like to see improved?</label>
+                <label><input type="checkbox" name="improve" value="fep">Front-end projects</label>
+                <label><input type="checkbox" name="improve" value="fel">Front-end lectures</label>
+                <label><input type="checkbox" name="improve" value="bep">Back-end projects</label>
+                <label><input type="checkbox" name="improve" value="bel">Back-end lectures</label>
+                <label><input type="checkbox" name="improve" value="fp">Faster pacing</label>
+                <label><input type="checkbox" name="improve" value="sp">Slower pacing</label>
+
+                <label>Any comments or suggestions?</label>
+                <textarea id="text-area" placeholder="Enter comments here..."></textarea>
+
+                <input id="submit" type="submit">
+            </form>
+        </div>
+    </body>
+
+</html>
